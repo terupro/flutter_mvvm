@@ -7,10 +7,7 @@ part 'home_page.state.freezed.dart';
 @freezed
 class HomePageState with _$HomePageState {
   const factory HomePageState({
-    /// Main Count
     @Default(0) int mainCount,
-
-    /// Sub Count
     @Default(0) int subCount,
   }) = _HomePageState;
 }

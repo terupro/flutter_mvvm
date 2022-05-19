@@ -1,10 +1,9 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_mvvm/models/home_page.state.dart';
+import 'package:flutter_mvvm/model/home_page.state.dart';
 
 class HomePageNotifier extends StateNotifier<HomePageState> {
-  HomePageNotifier(this.read) : super(const HomePageState());
-  // Reader 型をフィールドに持っておくことで、HomePageNotifierから他のProviderを読み取ることができるようになります
-  final Reader read;
+  // 初期値の指定
+  HomePageNotifier() : super(const HomePageState());
 
   // メインカウントを+1する
   void increaseMainCount() async {
@@ -24,3 +23,9 @@ class HomePageNotifier extends StateNotifier<HomePageState> {
     );
   }
 }
+
+// HomePageNotifierの状態を管理する
+final homePageProvider =
+    StateNotifierProvider.autoDispose<HomePageNotifier, HomePageState>(
+  (ref) => HomePageNotifier(),
+);
