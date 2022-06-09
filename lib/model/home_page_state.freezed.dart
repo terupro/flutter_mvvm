@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
-part of 'home_page.state.dart';
+part of 'home_page_state.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -31,10 +31,7 @@ const $HomePageState = _$HomePageStateTearOff();
 
 /// @nodoc
 mixin _$HomePageState {
-  /// Main Count
   int get mainCount => throw _privateConstructorUsedError;
-
-  /// Sub Count
   int get subCount => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
@@ -123,13 +120,9 @@ class _$_HomePageState with DiagnosticableTreeMixin implements _HomePageState {
 
   @JsonKey()
   @override
-
-  /// Main Count
   final int mainCount;
   @JsonKey()
   @override
-
-  /// Sub Count
   final int subCount;
 
   @override
@@ -172,12 +165,8 @@ abstract class _HomePageState implements HomePageState {
       _$_HomePageState;
 
   @override
-
-  /// Main Count
   int get mainCount;
   @override
-
-  /// Sub Count
   int get subCount;
   @override
   @JsonKey(ignore: true)

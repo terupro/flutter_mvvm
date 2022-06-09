@@ -1,5 +1,5 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_mvvm/model/home_page.state.dart';
+import 'package:flutter_mvvm/model/home_page_state.dart';
 
 class HomePageNotifier extends StateNotifier<HomePageState> {
   // 初期値の指定
